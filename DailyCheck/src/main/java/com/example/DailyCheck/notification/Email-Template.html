@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic HTML Email</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.5;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            /*max-width: 600px;*/
+            margin: 0 auto;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333333;
+        }
+
+        p {
+            color: #555555;
+        }
+
+        .response {
+            background: lawngreen;
+            color: black;
+            width: 90px;
+        }
+
+        .highlight {
+            background: yellow;
+        }
+
+    </style>
+</head>
+<body>
+<div class="container">
+
+    <p>Dear All,</p>
+    <p class="response">
+        <strong>Response:</strong>
+    </p>
+    <p>
+        {"res_code":"2014","res_message":"Success","result":{"lastDowntime":"","resultCode":"S-SYS-00009","txnNumber":"GO20230608112425788","resultDesc":"queryOntStatus
+        error","runStatus":"","lastUptime":""}}</p>
+
+    <p class="response">
+        <strong>Request:</strong>
+    </p>
+
+    <p>
+        {
+        "source" : "crm",
+        "requestId" : "570d64db-5c1e-4f08-8fa4-4b0d79fb2f62",
+        "createDate" : "2023-06-08T11:24:25.7916637+03:00",
+        "data" : {
+        "bccCustomerNumber" : 0,
+        "bccSubProductsId" : 0,
+        <span class="highlight">"bccContractNumber" : 107309085,</span>
+        <span class="highlight">"workFlowID" : 0,</span>
+        "batch" : false,
+        <span class="highlight">"eventCode" : "OAITCONT",</span>
+        "isBatch" : false,
+        "priority" : 1,
+        "parameters" : [ {
+        "FiberType" : "FTTH",
+        "ProviderServiceNo" : "GO",
+        "TxnNumber" : "GO20230608112425788"
+        } ]
+        }
+        }
+    </p>
+</div>
+</body>
+</html>
